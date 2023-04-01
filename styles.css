@@ -1,0 +1,98 @@
+/* genral css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*the main wrapper */
+.calculator{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-template-areas:
+    "result result result result result result result result"
+    "seven seven eight eight nine nine multip multip"
+    "seven seven eight eight nine nine multip multip"
+    "four four five five six six subtrac subtrac"
+    "four four five five six six subtrac subtrac"
+    "one one two two three three plus plus"
+    "one one two two three three plus plus"
+    "love love love love point point equal equal"
+    "love love love love point point equal equal";
+
+}
+
+/* buttons */
+
+.result{
+    grid-area: result;
+}
+.zero{
+    grid-area: love;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    grid-area: three;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    grid-area: five;
+}
+
+.six{
+    grid-area: six;
+}
+
+.seven{
+    grid-area: seven;
+}
+
+.eight{
+    grid-area: eight;
+}
+
+.nine{
+    grid-area: nine;
+}
+
+.multiply{
+    grid-area: multip;
+}
+
+.subtract{
+    grid-area: subtrac;
+
+}
+
+.add{
+    grid-area: plus;
+
+}
+
+.decimal{
+    grid-area: point;
+    display: grid
+}
+
+.equals{
+    grid-area: equal;
+}
