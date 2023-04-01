@@ -4,10 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+    font-size: 50px;
+}
 
 /*the main wrapper */
 .calculator{
+    width: 360px;
+    height: 400px;
     position: fixed;
     top: 50%;
     left: 50%;
