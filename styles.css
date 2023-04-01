@@ -37,6 +37,7 @@ body{
 
 .result{
     grid-area: result;
+    text-align: end;
 }
 .zero{
     grid-area: love;
@@ -44,6 +45,7 @@ body{
 
 .one{
     grid-area: one;
+
 }
 
 .two{
@@ -99,4 +101,16 @@ body{
 
 .equals{
     grid-area: equal;
+}
+
+/* align txt */ 
+
+.txt-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txt-center span{
+    text-align: center;
 }
