@@ -19,3 +19,11 @@ function operate(a, b, operator = "+") {
       throw new Error("Unsupported operator");
     }
   }
+
+  const calculator = document.querySelector('.calculator');
+
+  calculator.addEventListener('click',(e)=>{
+    if (event.target.closest('.one') != null) {
+      console.log('1');
+    }
+  })
