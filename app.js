@@ -22,8 +22,13 @@ function operate(a, b, operator = "+") {
 
   const calculator = document.querySelector('.calculator');
 
+  let displayArray =[];
   calculator.addEventListener('click',(e)=>{
+
     if (e.target.closest('.one') != null) {
-      console.log('1');
+      if (displayArray.length < 10) {
+      displayArray.push('1');
+}     
+    console.log(displayArray);
     }
   })
