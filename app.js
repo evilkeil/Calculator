@@ -75,5 +75,7 @@ function operate(a, b, operator = "+") {
       displayArray.push('0');
       }     
     }
-    console.log(displayArray);
+
+    let display = parseInt(displayArray.join(""));
+    console.log(display);
   })
