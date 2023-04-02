@@ -26,9 +26,54 @@ function operate(a, b, operator = "+") {
   calculator.addEventListener('click',(e)=>{
 
     if (e.target.closest('.one') != null) {
-      if (displayArray.length < 10) {
+      if (displayArray.length < 9) {
       displayArray.push('1');
-}     
-    console.log(displayArray);
+      }     
     }
+    if (e.target.closest('.two') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('2');
+      }     
+    }
+    if (e.target.closest('.three') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('3');
+      }     
+    }
+    if (e.target.closest('.four') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('4');
+      }     
+    }
+    if (e.target.closest('.five') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('5');
+      }     
+    }
+    if (e.target.closest('.six') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('6');
+      }     
+    }
+    if (e.target.closest('.seven') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('7');
+      }     
+    }
+    if (e.target.closest('.eight') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('8');
+      }     
+    }
+    if (e.target.closest('.nine') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('9');
+      }     
+    }
+    if (e.target.closest('.zero') != null) {
+      if (displayArray.length < 9) {
+      displayArray.push('0');
+      }     
+    }
+    console.log(displayArray);
   })
