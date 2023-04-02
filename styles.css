@@ -118,3 +118,11 @@ body{
 .txt-center span{
     text-align: center;
 }
+
+/* grid for the result */ 
+
+.result{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+}
+
