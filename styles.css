@@ -28,8 +28,8 @@ body{
     "four four five five six six subtrac subtrac"
     "one one two two three three plus plus"
     "one one two two three three plus plus"
-    "love love love love point point equal equal"
-    "love love love love point point equal equal";
+    "love love clear clear point point equal equal"
+    "love love clear clear point point equal equal";
 
 }
 
@@ -101,6 +101,10 @@ body{
 
 .equals{
     grid-area: equal;
+}
+
+.clear{
+    grid-area: clear;
 }
 
 /* align txt */ 
