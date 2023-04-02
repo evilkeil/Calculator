@@ -16,6 +16,7 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border: 2px solid black;
 
     display: grid;
     grid-template-columns: repeat(8,1fr);
@@ -38,13 +39,16 @@ body{
 .result{
     grid-area: result;
     text-align: end;
+
 }
 .zero{
     grid-area: love;
+    
 }
 
 .one{
     grid-area: one;
+    
 
 }
 
@@ -113,6 +117,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px solid black;
 }
 
 .txt-center span{
