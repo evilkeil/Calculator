@@ -23,7 +23,7 @@ function operate(a, b, operator = "+") {
   const calculator = document.querySelector('.calculator');
 
   calculator.addEventListener('click',(e)=>{
-    if (event.target.closest('.one') != null) {
+    if (e.target.closest('.one') != null) {
       console.log('1');
     }
   })
