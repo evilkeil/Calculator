@@ -22,6 +22,19 @@ function operate(a, b, operator = "+") {
 
   const calculator = document.querySelector('.calculator');
 
+  /* grab the display elements*/
+
+  const ones = document.querySelector('#ones');
+  const tens = document.querySelector('#tens');
+  const hundreds = document.querySelector('#hundreds');
+  const thousands = document.querySelector('#thousands');
+  const tenThousands = document.querySelector('#tenThousands');
+  const hundredThousands = document.querySelector('#hundredThousands');
+  const millions = document.querySelector('#millions');
+  const tenMillions = document.querySelector('#tenMillions');
+
+  // const displayNode = document.querySelectorAll('.result');
+
   let displayArray =[];
   calculator.addEventListener('click',(e)=>{
 
@@ -74,8 +87,68 @@ function operate(a, b, operator = "+") {
       if (displayArray.length < 9) {
       displayArray.push('0');
       }     
-    }
+    }{}
 
-    let display = parseInt(displayArray.join(""));
-    console.log(display);
+    if (displayArray.length ==1){
+      ones.textContent = displayArray[0] ;
+    }
+    if (displayArray.length ==2){
+      ones.textContent = displayArray[1];
+      tens.textContent = displayArray[0];
+    }
+    if (displayArray.length ==3){
+      ones.textContent = displayArray[2];
+      tens.textContent = displayArray[1];
+      hundreds.textContent= displayArray[0];
+    }
+    if (displayArray.length ==4){
+      ones.textContent = displayArray[3];
+      tens.textContent = displayArray[2];
+      hundreds.textContent= displayArray[1];
+      thousands.textContent = displayArray[0];
+    }
+    if (displayArray.length ==5){
+      ones.textContent = displayArray[4];
+      tens.textContent = displayArray[3];
+      hundreds.textContent= displayArray[2];
+      thousands.textContent = displayArray[1];
+      tenThousands.textContent=displayArray[0];
+    }
+    if (displayArray.length ==6){
+      ones.textContent = displayArray[5];
+      tens.textContent = displayArray[4];
+      hundreds.textContent= displayArray[3];
+      thousands.textContent = displayArray[2];
+      tenThousands.textContent=displayArray[1];
+      hundredThousands.textContent=displayArray[0];
+    }
+    if (displayArray.length ==7){
+      ones.textContent = displayArray[6];
+      tens.textContent = displayArray[5];
+      hundreds.textContent= displayArray[4];
+      thousands.textContent = displayArray[3];
+      tenThousands.textContent=displayArray[2];
+      hundredThousands.textContent=displayArray[1];
+      millions.textContent=displayArray[0];
+    }
+    if (displayArray.length ==8){
+      ones.textContent = displayArray[7];
+      tens.textContent = displayArray[6];
+      hundreds.textContent= displayArray[5];
+      thousands.textContent = displayArray[4];
+      tenThousands.textContent=displayArray[3];
+      hundredThousands.textContent=displayArray[2];
+      millions.textContent=displayArray[1];
+      tenMillions.textContent =displayArray[0];
+    }
+    // let display = parseInt(displayArray.join(""));
+    // console.log(display);
   })
+
+
+  
+  //self notes
+
+  /* >make it so that the array will be displayed in the dislay
+  like index 0 is id ones index 1 is id tens etc
+    > use tie the operator btns + - etc to the operate function and make it so that it will be calculated and displayed */
