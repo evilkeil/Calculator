@@ -93,6 +93,9 @@ function setUpCalculator(){
       if (e.target.closest('.multiply') != null) {
         operator = "x";
           } {}
+      if (e.target.closest('.divide') != null) {
+          operator = "/";
+          } {}
       
       if (operator === ""){
         if (e.target.closest('.one') != null) {
