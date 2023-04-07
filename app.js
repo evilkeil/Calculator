@@ -16,3 +16,16 @@ const clear = document.querySelector('.clear')
 let firstOperand =""; //a
 let secondOperand =""; //b
 let currentOperator = null;
+
+function updateDisplay() {
+  if (firstOperand.length > 8) {
+    firstOperand = firstOperand.slice(0, 8);
+  }
+  display.textContent = firstOperand;
+}
+function updateSecondDisplay() {
+  if (secondOperand.length > 8) {
+      secondOperand = secondOperand.slice(0, 8);
+  }
+  display.textContent = secondOperand;
+}
