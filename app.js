@@ -88,3 +88,12 @@ equal.addEventListener('click',()=>{
   secondOperand = "";
   currentOperator = null;
 });
+
+//the clear btn 
+
+clear.addEventListener('click',()=>{
+ firstOperand =""; 
+ secondOperand =""; 
+ currentOperator = null;
+ updateDisplay()
+})
