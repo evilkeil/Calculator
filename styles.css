@@ -20,17 +20,20 @@ body{
 
     display: grid;
     grid-template-columns: repeat(8,1fr);
-    grid-template-rows: repeat(8,1fr);
+    grid-template-rows: repeat(12,1fr);
     grid-template-areas:
     "result result result result result result result result"
+    "result result result result result result result result"
+    "clear clear percent percent plusMinus plusMinus divide divide"
+    "clear clear percent percent plusMinus plusMinus divide divide"
     "seven seven eight eight nine nine multip multip"
     "seven seven eight eight nine nine multip multip"
     "four four five five six six subtrac subtrac"
     "four four five five six six subtrac subtrac"
     "one one two two three three plus plus"
     "one one two two three three plus plus"
-    "love love clear clear point point equal equal"
-    "love love clear clear point point equal equal";
+    "love love love love point point equal equal"
+    "love love love love point point equal equal";
 
 }
 
@@ -109,6 +112,17 @@ body{
 
 .clear{
     grid-area: clear;
+}
+
+.divide{
+    grid-area: divide;
+}
+
+.percentage{
+    grid-area: percent;
+}
+.plusMinus{
+    grid-area: plusMinus;
 }
 
 /* align txt */ 
