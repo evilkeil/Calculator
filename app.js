@@ -64,3 +64,27 @@ operators.forEach(operator =>{
 
   });
 });
+
+//handle the math calculations 
+
+equal.addEventListener('click',()=>{
+  if(currentOperator === "+"){
+    firstOperand =  parseFloat(firstOperand) + parseFloat(secondOperand);
+    firstOperand = firstOperand.toString();
+    updateDisplay();
+  }else if(currentOperator === "-"){
+    firstOperand = parseFloat(firstOperand) - parseFloat(secondOperand);
+    firstOperand = firstOperand.toString();
+    updateDisplay()
+  }else if(currentOperator === "x"){
+    firstOperand = parseFloat(firstOperand) * parseFloat(secondOperand);
+    firstOperand = firstOperand.toString();
+    updateDisplay()
+  }else if(currentOperator === "/"){
+    firstOperand = parseFloat(firstOperand) / parseFloat(secondOperand);
+    firstOperand = firstOperand.toString();
+    updateDisplay()
+  }{}
+  secondOperand = "";
+  currentOperator = null;
+});
