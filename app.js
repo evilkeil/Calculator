@@ -29,3 +29,21 @@ function updateSecondDisplay() {
   }
   display.textContent = secondOperand;
 }
+
+
+numberKey.forEach(key => {
+  key.addEventListener('click', () => {
+      if (currentOperator) {
+          if (secondOperand.length < 8) {
+              secondOperand += key.textContent;
+          }
+          updateSecondDisplay();
+      } else {
+          if (firstOperand.length < 8) {
+              firstOperand += key.textContent;
+          }
+          updateDisplay();
+      }
+  });
+});
+
