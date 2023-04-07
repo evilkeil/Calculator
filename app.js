@@ -2,15 +2,16 @@
 
 const display = document.querySelector('.result');
 const numberKey = document.querySelectorAll('.btn');
-const addition = document.querySelector('.add');
-const subtract = document.querySelector('.subtract');
-const multiply = document.querySelector('.multiply');
-const divide = document.querySelector('.divide');
+// const addition = document.querySelector('.add');
+// const subtract = document.querySelector('.subtract');
+// const multiply = document.querySelector('.multiply');
+// const divide = document.querySelector('.divide');
 const decimal = document.querySelector('.decimal');
 const percentage = document.querySelector('.percentage');
 const plusMinus = document.querySelector('.plusMinus');
 const equal = document.querySelector('.equals');
 const clear = document.querySelector('.clear')
+const operators = document.querySelectorAll('.operator');
 
 
 let firstOperand =""; //a
@@ -30,7 +31,7 @@ function updateSecondDisplay() {
   display.textContent = secondOperand;
 }
 
-
+//handle number inputs
 numberKey.forEach(key => {
   key.addEventListener('click', () => {
       if (currentOperator) {
@@ -47,3 +48,19 @@ numberKey.forEach(key => {
   });
 });
 
+//handle operator inputs 
+
+operators.forEach(operator =>{
+  operator.addEventListener('click',()=>{
+    if(operator.classList.contains('add')){
+      currentOperator = "+";
+    }else if (operator.classList.contains('subtract')){
+      currentOperator = "-";
+    }else if (operator.classList.contains('multiply')){
+      currentOperator = "x";
+    }else if (operator.classList.contains('divide')){
+      currentOperator= "/";
+    }
+
+  });
+});
