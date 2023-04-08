@@ -129,3 +129,4 @@ decimal.addEventListener('click', () => {
     updateDisplay();
   }
 });
+
