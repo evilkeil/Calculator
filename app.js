@@ -104,3 +104,15 @@ percentage.addEventListener('click',()=>{
   updateDisplay();
 });
 
+let plusMinusStatus ="+";
+plusMinus.addEventListener('click',()=>{
+  if(plusMinusStatus === "+"){
+    firstOperand = "-" + firstOperand;  
+    updateDisplay();
+    plusMinusStatus = "-";
+  }else{
+    firstOperand = firstOperand.slice(1);
+    updateDisplay();
+    plusMinusStatus = "+";
+  }
+});
