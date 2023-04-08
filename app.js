@@ -84,6 +84,7 @@ equal.addEventListener('click',()=>{
     firstOperand = parseFloat(firstOperand) / parseFloat(secondOperand);
     firstOperand = firstOperand.toString();
     updateDisplay()
+
   }{}
   secondOperand = "";
   currentOperator = null;
@@ -97,3 +98,9 @@ clear.addEventListener('click',()=>{
  currentOperator = null;
  updateDisplay()
 })
+
+percentage.addEventListener('click',()=>{
+  firstOperand= firstOperand/100;
+  updateDisplay();
+});
+
