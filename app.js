@@ -116,3 +116,16 @@ plusMinus.addEventListener('click',()=>{
     plusMinusStatus = "+";
   }
 });
+
+decimal.addEventListener('click', () => {
+  if (currentOperator && secondOperand === '') {
+    secondOperand = '0.';
+    updateSecondDisplay();
+  } else if (currentOperator && !(secondOperand.includes('.'))) {
+    secondOperand += '.';
+    updateSecondDisplay();
+  } else if (!currentOperator && !(firstOperand.includes('.'))) {
+    firstOperand += '.';
+    updateDisplay();
+  }
+});
