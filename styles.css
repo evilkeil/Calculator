@@ -151,6 +151,12 @@ body{
 }
 
 /* styles for making animated gradient */
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+  
 
 :root{
     --clr-1:#210535;
