@@ -166,4 +166,24 @@ body{
     position: relative;
     height: 60vh;
     aspect-ratio: 1 / 1.5;
+    background: var(--clr-1);
+}
+
+.calculator::before,
+.calculator::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: linear-gradient(
+    0deg,
+    var(--clr-2),
+    var(--clr-3),
+    var(--clr-4)
+    );
+   
+}
+
+.calculator::after{
+    filter: blur(3.5rem);
 }
