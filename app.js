@@ -130,3 +130,25 @@ decimal.addEventListener('click', () => {
   }
 });
 
+function deleteLastCharacter() {
+  if (currentOperator) {
+    if (secondOperand.length > 0) {
+      secondOperand = secondOperand.slice(0, -1);
+
+      updateSecondDisplay();
+    }
+  } else {
+    if (firstOperand.length > 0) {
+      firstOperand = firstOperand.slice(0, -1);
+
+      updateDisplay();
+    }
+  }
+};
+
+
+document.addEventListener('keydown', event => {
+  if (event.key === 'Backspace') {
+    deleteLastCharacter();
+  }
+});
