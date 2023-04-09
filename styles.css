@@ -157,39 +157,54 @@ body{
     inherits: false;
   }
   
-
-:root{
+  @keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
+  
+  :root{
     --clr-1:#210535;
     --clr-2:#430d4b;
     --clr-3:#7b337d;
     --clr-4:#c874b2;
     --clr-5:#f5d5e0;
-
-}
-
-.calculator{
+  }
+  
+  .calculator{
     border-radius:0.5rem;
     position: relative;
     height: 60vh;
     aspect-ratio: 1 / 1.5;
     background: var(--clr-1);
-}
-
-.calculator::before,
-.calculator::after{
+  }
+  
+  .calculator::before,
+  .calculator::after{
     content: "";
     position: absolute;
-    inset: 0;
+    inset: -0.5rem;
     border-radius: inherit;
-    background: linear-gradient(
-    0deg,
-    var(--clr-2),
-    var(--clr-3),
-    var(--clr-4)
+    background: conic-gradient(
+      from var(--gradient-angle),
+      var(--clr-1),
+      var(--clr-2),
+      var(--clr-3),
+      var(--clr-4),
+      var(--clr-5),
+      var(--clr-4),
+      var(--clr-3),
+      var(--clr-2),
+      var(--clr-1)
     );
-   
-}
-
-.calculator::after{
+    animation: rotation 20s linear infinite;
+    z-index: -1;
+  }
+  
+  .calculator::after{
     filter: blur(3.5rem);
-}
+  }
+  
