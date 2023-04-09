@@ -230,3 +230,10 @@ footer a{
 footer a:hover{
     color: var(--clr-2);
 }
+
+/* styles for when howring over a btn  */
+
+.hoverClass:hover{
+    color: var(--clr-3);
+    cursor: pointer;
+}
