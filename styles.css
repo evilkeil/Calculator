@@ -7,16 +7,15 @@
 body{
     font-size: 50px;
     background-color: #1a0521;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
 }
 
 /*the main wrapper */
 .calculator{
     width: 360px;
     height: 400px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     border: 2px solid black;
 
     display: grid;
@@ -158,4 +157,9 @@ body{
     --clr-4:#c874b2;
     --clr-5:#f5d5e0;
 
+}
+
+.calculator{
+    border-radius:0.5rem;
+    position: relative;
 }
