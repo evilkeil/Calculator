@@ -10,6 +10,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-content: center;
+    color: white;
 }
 
 /*the main wrapper */
@@ -146,6 +147,7 @@ body{
     border: 2px solid black;
     letter-spacing: 1rem;
     padding-right: 5px;
+    padding-top: 15px;
 }
 
 /* styles for making animated gradient */
@@ -162,4 +164,6 @@ body{
 .calculator{
     border-radius:0.5rem;
     position: relative;
+    height: 60vh;
+    aspect-ratio: 1 / 1.5;
 }
