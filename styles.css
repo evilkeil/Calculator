@@ -148,3 +148,13 @@ body{
     padding-right: 5px;
 }
 
+/* styles for making animated gradient */
+
+:root{
+    --clr-1:#210535;
+    --clr-2:#430d4b;
+    --clr-3:#7b337d;
+    --clr-4:#c874b2;
+    --clr-5:#f5d5e0;
+
+}
